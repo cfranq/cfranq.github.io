@@ -1,0 +1,130 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #A96E00;
+  position: relative;
+}
+
+.details {
+  color:#2A4030;
+  font-family: 'Long Cang', cursive;
+}
+
+.profile-link {
+  color:; white;
+  font-size: 12px;
+  display: block;
+}
+
+.link-heading {
+  display: block;
+  font-size: 12px;
+}
+
+a:hover,
+a:visited:hover {
+  color: purple;
+}
+
+a:visited {
+  color: yellowgreen;
+}
+
+.square-one .inner {
+  background:#2A4030;
+}
+
+.square-two .inner {
+  background: #290B20;
+}
+
+.square-three .inner {
+  background: #F05D5E;
+}
+
+.outer {
+  box-sizing: border-box;
+  padding: 40px;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: flex-start;
+  max-width: 1400px;
+  margin: 0 auto;
+  min-height: 100vh;
+  align-items: stretch;
+}
+
+
+.left {
+  flex-grow: 1;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.right {
+  flex-grow: 1;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  position: relative;
+  width: 340px;
+  height: 345px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.square {
+  position: absolute;
+  display: flex;
+  height: 240px;
+  width: 240px;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+}
+
+.inner {
+  height: 240px;
+  width: 4px;
+  margin-right: 8px;
+}
+
+
+.square-one {
+  left: 48px;
+  top: 52px;
+}
+
+.wrap:hover .square-one {
+  left: 0;
+  top: 0;
+}
+
+.square-two {
+  left: 52px;
+  top: 52px;
+}
+
+.square-three {
+  left: 56px;
+  top: 52px;
+}
+
+.wrap:hover .square-three {
+  left: 104px;
+  top: 104px;
+}
